@@ -70,10 +70,10 @@ echo '<br>';
 function bepaalMaximaleOpbrengst () {
     $parkeerplaatsen = 75;
 
-    for ($x = 10; $x >= 0; $x--) { //Loopen totdat hij true returnt
-        $autos = $parkeerplaatsen - ($x * 3); //Auto's = parkeerplaatsen - ingenomen parkeerplaatsen door bussen
-        if (minMax($x, $parkeerplaatsen, $autos)) { //Is true gereturnt
-            bepaalOpbrengst($autos, $x); //Bepaalopbrengst functie
+    for ($bussen = 10; $bussen >= 0; $bussen--) { //Loopen totdat hij true returnt
+        $autos = $parkeerplaatsen - ($bussen * 3); //Auto's = parkeerplaatsen - ingenomen parkeerplaatsen door bussen
+        if (minMax($bussen, $parkeerplaatsen, $autos)) { //Is true gereturnt
+            bepaalOpbrengst($autos, $bussen); //Bepaalopbrengst functie
             exit;
         }
     }
