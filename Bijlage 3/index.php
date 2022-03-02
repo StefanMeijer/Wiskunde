@@ -78,6 +78,6 @@ function produceerMaxRadios () {
     $winst += $modelA * 12;
     $winst += $modelB * 10;
 
-    return  $modelA + $modelB . ' aantal wekkerradios. Maximale winst is: €' . $winst;
+    return  'Maximale winst met: ' .$modelA + $modelB . ' aantal wekkerradios. Maximale winst is: €' . $winst;
 }
-echo 'Maximale winst met: ' . produceerMaxRadios();
+echo produceerMaxRadios();
